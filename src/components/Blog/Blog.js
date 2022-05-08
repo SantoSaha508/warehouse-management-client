@@ -1,9 +1,10 @@
 import React from 'react';
+import './Blog.css';
 
 const Blog = () => {
     return (
-        <div>
-            <div className='bg-success'>
+        <div className='container mt-4 '>
+            <div className='blog'>
                 <h3>Difference between javaScript and node.js?</h3>
                 <p>
                     javaScript: <br />
@@ -22,7 +23,7 @@ const Blog = () => {
                     5. We can run JS in any browser engine, such as the Spidermonkey in the Firefox browser and the JS core in the Safari browser. <br />	
                 </p>
             </div>
-            <div className='bg-danger'>
+            <div className='blog'>
                 <h3>Difference between sql and nosql database?</h3>
                 <p>
                     sql: <br />
@@ -39,7 +40,7 @@ const Blog = () => {
                     4. Dynamic schema is used for unstructured or disorganised data. <br />
                 </p>
             </div>
-            <div className='bg-success'>
+            <div className='blog'>
                 <h3>What is the purpose of jwt and how does it works?</h3>
                 <p>
                 JSON Web Token, is an open standard used to share security information between two parties — a client and a server. Each JWT contains encoded JSON objects, including a set of claims. JWTs are signed using a cryptographic algorithm to ensure that the claims cannot be altered after the token is issued.

@@ -1,10 +1,27 @@
 .notfound h1{
-    font-size: 50px;
+    font-size: 100px;
     padding-top: 30px;
+    color: rgb(119, 90, 11);
+    font-weight: 800;
+}
+.notfound h3{
+    font-size: 60px;
+    padding-top: 30px;
+    color: gray;
+    font-style: italic;
+}
+
+.notfound p{
+    font-size: 20px;
+    font-style: italic;
+    padding: 20px;
 }
 
 .notfound {
-    background-color: rgb(207, 198, 198);
+    background-color: rgb(234, 231, 231);
     text-align: center;
-    height: 450px;
+}
+
+.notfound img{
+    width: 300px;
 }

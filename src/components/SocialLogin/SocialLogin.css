@@ -1,0 +1,10 @@
+.google{
+    background-color: orange;
+    border-radius: 5px;
+    border: none;
+}
+
+.google img{
+    width: 20px;
+    margin-right: 5px;
+}

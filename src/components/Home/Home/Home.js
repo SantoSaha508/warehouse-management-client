@@ -1,9 +1,12 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
+import Products from '../Products/Products';
 
 const Home = () => {
+    
+
     return (
         <div>
-            <h2>thsi is home</h2>
+            <Products></Products>
         </div>
     );
 };
