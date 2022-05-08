@@ -1,0 +1,9 @@
+.logo {
+    text-decoration: none;
+    color: orange;
+}
+
+.items a{
+    text-decoration: none;
+    margin-right: 3px;
+}
