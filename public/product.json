@@ -1,45 +1,66 @@
 [
     {
         "id": 1,
-        "name": "ENGINE DIAGNOSTIC",
-        "price": "300",
-        "description": "Lorem ipsum dolor sit amet, consectetu radipisi cing elitBeatae autem aperiam nequ quaera molestias voluptatibus harum ametipsa.",
+        "name": "Lehanga",
+        "price": "15000",
+        "description": "All Lehenga are made by India.",
+        "quantity": "30",
+        "supplier_name": "Adhir Sing",
         "img": "https://i.ibb.co/6r6zHn5/lehanga.jpg"
     },
         
     {
         "id": 2,
-        "name": "WHEEL ALIGNMENT",
-        "price": "100",
-        "description": "Lorem ipsum dolor sit amet, consectetu radipisi cing elitBeatae autem aperiam nequ quaera molestias voluptatibus harum ametipsa.",
+        "name": "Tate sharee",
+        "price": "1520",
+        "description": "All of our products are orginal tangail tate sharee.",
+        "quantity": "120",
+        "supplier_name": "Suresh Saha",
         "img": "https://i.ibb.co/mGt6gyj/maxresdefault.jpg"
     },
     {
         "id": 3,
-        "name": "OIL CHANGING",
-        "price": "150",
-        "description": "Lorem ipsum dolor sit amet, consectetu radipisi cing elitBeatae autem aperiam nequ quaera molestias voluptatibus harum ametipsa.",
+        "name": "Lungi",
+        "price": "850",
+        "description": "All lungi are come from pabna tate.",
+        "quantity": "500",
+        "supplier_name": "Akhbar ali",
         "img": "https://i.ibb.co/s3d3mZf/unnamed.jpg"
     },
     {
         "id": 4,
-        "name": "BRAKE REPARING",
-        "price": "180",
-        "description": "Lorem ipsum dolor sit amet, consectetu radipisi cing elitBeatae autem aperiam nequ quaera molestias voluptatibus harum ametipsa.",
-        "img": "https://i.ibb.co/s3d3mZf/unnamed.jpg"
+        "name": "Print sharee",
+        "price": "650",
+        "description": "All sharee are from tangail. Pure suti sharee.",
+        "quantity": "800",
+        "supplier_name": "Shahi Ali",
+        "img": "https://i.ibb.co/1QczM6B/printsharee.jpg"
     },
     {
         "id": 5,
-        "name": "WASH AND GLASSING",
-        "price": "100",
-        "description": "Lorem ipsum dolor sit amet, consectetu radipisi cing elitBeatae autem aperiam nequ quaera molestias voluptatibus harum ametipsa.",
-        "img": "https://i.ibb.co/FgQ3jXp/5.jpg"
+        "name": "Genji",
+        "price": "550",
+        "description": "All are genion suti. made in narayanganj",
+        "quantity": "1200",
+        "supplier_name": "Tushar saha",
+        "img": "https://i.ibb.co/GHWtTQy/londonboy.jpg"
     },
     {
         "id": 6,
-        "name": "COMPLETE ANALYSIS",
-        "price": "300",
-        "description": "Lorem ipsum dolor sit amet, consectetu radipisi cing elitBeatae autem aperiam nequ quaera molestias voluptatibus harum ametipsa",
-        "img": "https://i.ibb.co/zJy5ZDd/6.jpg"
+        "name": "Pant piece",
+        "price": "450",
+        "description": "All are from japan. Good quality.",
+        "quantity": "1000",
+        "supplier_name": "Asis Mahuta",
+        "img": "https://i.ibb.co/SR4LTFc/shirt.jpg"
+    },
+    {
+        "id": 7,
+        "name": "Shirt piece",
+        "price": "600",
+        "description": "All are from India. Good quality.",
+        "quantity": "1100",
+        "supplier_name": "Nitai saha",
+        "img": "https://i.ibb.co/SR4LTFc/shirt.jpg"
     }
 ]

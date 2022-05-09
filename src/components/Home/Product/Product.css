@@ -1,11 +1,10 @@
 .productContainer{
     background-color: aliceblue;
-    margin: 10px;
     border-radius: 20px;
 }
 .productContainer img{
     border-radius: 20px 20px 0px 0px;
 }
 .productDetails {
-    padding: 10px;
+    padding: 5px;
 }
