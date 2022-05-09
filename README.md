@@ -1,6 +1,14 @@
 # Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Dress Warehouse [Create React App](https://dress-warehouse-assgn11.web.app).
+
+**Details:**
+1. Use React router for routing.
+2. Use firebase for email/password/google authentication.
+3. Use MongoDB for database.
+4. Create private route.
+5. Use data from database.
+
 
 ## Available Scripts
 
