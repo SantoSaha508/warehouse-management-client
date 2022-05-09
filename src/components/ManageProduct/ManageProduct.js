@@ -21,8 +21,8 @@ const ManageProduct = ({ product,  handleDelete}) => {
                 <h4>Quantity: {quantity}</h4>
                 <h5>Supplier: {supplier_name}</h5>
             </div>
-            <button onClick={ () => handleUpdate(_id)} className='btn bg-primary w-100 '>Stock Update</button> <br />
-            <button onClick={() => handleDelete(_id)}  className='btn bg-primary w-100 '>
+            <button onClick={ () => handleUpdate(_id)} className='btn bg-success w-100 mb-3 rounded-pill'>Stock Update</button> <br />
+            <button onClick={() => handleDelete(_id)}  className='btn bg-warning w-100 rounded-pill '>
                 Delete</button>
         </div>
     );
