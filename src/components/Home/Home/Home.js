@@ -10,7 +10,12 @@ const Home = () => {
             <div className='mt-3'>
                 <img style={{height: '400px'}} className='w-100' src={banner} alt="" />
             </div>
+            <div>
             <Products></Products>
+            </div>
+            <div>
+                
+            </div>
         </div>
     );
 };

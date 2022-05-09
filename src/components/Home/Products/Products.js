@@ -14,7 +14,8 @@ const Products = () => {
 
     return (
         <div>
-            <h1 className='text-center bg-primary p-3 mt-4'>Inventory Items: {products.length}</h1>
+            <h1 className='
+           inventoryItem text-center p-3 mt-4'>Inventory Items: {products.length}</h1>
             <div className='productsContainer'>
                 {
                     products.map(product => <Product

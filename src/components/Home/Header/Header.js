@@ -19,7 +19,7 @@ const Header = () => {
 
     return (
         <Navbar className='bg-dark text-dark'>
-            <div className='text-primary mx-auto'>
+            <div className='logo text-primary mx-auto'>
                 <h3>Dress warehouse</h3>
             </div>
             <div className='mx-auto'>
