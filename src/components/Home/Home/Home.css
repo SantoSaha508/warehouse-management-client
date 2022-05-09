@@ -5,3 +5,15 @@
     padding: 10px;
     font-weight: 800;
 }
+
+.service {
+    background-color: gainsboro;
+    margin-top: 15px;
+    text-align: center;
+    padding: 10px;
+    font-weight: 800;
+}
+.serviceSection p{
+    background-color: rgb(205, 198, 198);
+    padding: 30px;
+}
