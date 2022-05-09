@@ -19,18 +19,18 @@ const Header = () => {
 
     return (
         <Navbar className='bg-dark text-dark'>
-            <div className='text-primary'>
+            <div className='text-primary mx-auto'>
                 <h3>Dress warehouse</h3>
             </div>
-            <div>
+            <div className='mx-auto'>
                 <Nav className='items'>
-                    <Link to="/home">Home</Link>
-                    <Link to="/blog">Blog</Link>
+                    <Link className='option' to="/home">Home</Link>
+                    <Link className='option' to="/blog">Blog</Link>
                     {
                         user && <>
-                            <Link to="/manage">Manage</Link>
-                            <Link to="/additem">Add Item</Link>
-                            <Link to="/myitem">My Item</Link>
+                            <Link className='option' to="/manage">Manage</Link>
+                            <Link className='option' to="/additem">Add Item</Link>
+                            <Link className='option' to="/myitem">My Item</Link>
                         </>
                     }
                     {

@@ -11,8 +11,8 @@ import Blog from './components/Blog/Blog';
 import NotFound from './components/NotFound/NotFound';
 import RequireAuth from './components/Login/RequireAuth/RequireAuth';
 import AddItem from './components/Home/Products/AddItem/AddItem';
-import MyItem from './components/MyItem/MyItem';
 import Manage from './components/Manage/Manage';
+import MyItems from './components/MyItems/MyItems';
 
 function App() {
   return (
@@ -33,7 +33,7 @@ function App() {
 
         <Route path='/myitem' element={
           <RequireAuth>
-            <MyItem></MyItem>
+            <MyItems></MyItems>
           </RequireAuth>
         }></Route>
 

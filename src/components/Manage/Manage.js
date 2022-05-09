@@ -7,24 +7,26 @@ const Manage = () => {
     const [products, setProducts] = useState([]);
 
     useEffect(() => {
-        fetch('http://localhost:5000/product')
+        fetch('https://damp-savannah-41395.herokuapp.com/product')
             .then(res => res.json())
             .then(data => setProducts(data))
     }, []);
 
-    const handleDelete = id => {
-        const allow = window.confirm("Are you sure to delete?");
+
+    const handleDelete = id =>{
+        const allow = window.confirm('You dare to delete !');
         if(allow){
-            const url = ``;
+            console.log('deleting user with id, ', id);
+            const url = `https://damp-savannah-41395.herokuapp.com/product/${id}`;
             fetch(url, {
                 method: 'DELETE'
             })
             .then(res => res.json())
-            .then(data => {
-                if(data.deleteCount > 0){
-                    console.log("deleted");
-                    const remaning = products.filter(user => user._id !== id);
-                    setProducts(remaning);
+            .then(data =>{
+                if(data.deletedCount > 0){
+                    console.log('deleted');
+                    const remaining = products.filter(user => user._id !== id);
+                    setProducts(remaining);
                 }
             })
         }
@@ -38,11 +40,12 @@ const Manage = () => {
                     products.map(product => <ManageProduct
                         key={product._id}
                         product={product}
+                        handleDelete={handleDelete}
                     ></ManageProduct>)
                 }
+
             </div>
-            <button onClick={handleDelete}  className='btn bg-primary w-100 '>
-                Delete</button>
+            
         </div>
     );
 };

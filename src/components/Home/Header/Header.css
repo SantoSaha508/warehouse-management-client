@@ -1,5 +1,3 @@
-
-
 .items a{
     text-decoration: none;
     margin-right: 3px;
@@ -8,4 +6,12 @@
     padding: 0 3px;
     margin-right: 8px;
     border-radius: 4px;
+}
+
+
+.option:hover{
+    background-color: orangered;
+}
+.option:focus{
+    background-color: orangered;
 }

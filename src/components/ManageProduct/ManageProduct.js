@@ -1,13 +1,15 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 
-const ManageProduct = ({ product }) => {
-    const { name, price, description, img, quantity, supplier_name, } = product;
+const ManageProduct = ({ product,  handleDelete}) => {
+    const {_id, name, price, description, img, quantity, supplier_name, } = product;
     const navigate = useNavigate();
 
-    const handleUpdate = () => {
-        navigate('/inventoryItem')
+    const handleUpdate = (id) => {
+        navigate(`/home/inventoryItem/${id}`)
     }
+
+    
 
     return (
         <div className='productContainer'>
@@ -19,7 +21,9 @@ const ManageProduct = ({ product }) => {
                 <h4>Quantity: {quantity}</h4>
                 <h5>Supplier: {supplier_name}</h5>
             </div>
-            <button onClick={handleUpdate} className='btn bg-primary w-100 '>Stock Update</button> <br />
+            <button onClick={ () => handleUpdate(_id)} className='btn bg-primary w-100 '>Stock Update</button> <br />
+            <button onClick={() => handleDelete(_id)}  className='btn bg-primary w-100 '>
+                Delete</button>
         </div>
     );
 };
