@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { Link, useParams } from 'react-router-dom';
+import './InventoryItem.css'
 
 const InventoryItem = () => {
     const [singleProduct, setSingleProduct] = useState({});
@@ -71,12 +72,12 @@ const InventoryItem = () => {
                     console.log('success', data);
                     // alert('Added successfully!!!');
                     fetch(url)
-                    .then(res => res.json())
-                    .then(data => {
-                        // console.log(data);
-                        setSingleProduct(data)
-                        event.target.reset()
-                    })
+                        .then(res => res.json())
+                        .then(data => {
+                            // console.log(data);
+                            setSingleProduct(data)
+                            event.target.reset()
+                        })
                     // window.location.reload(false);
                 })
         }
@@ -86,25 +87,26 @@ const InventoryItem = () => {
     }
 
     return (
-        <div className=' m-3 bg-warning'>
+        <div className='m-3 p-3 inventory'>
+            <div className='card p-3 w-80 mx-auto'>
+                <div className='text-center mx-auto' style={{ "width": "18rem" }}>
+                    <img src={singleProduct?.img} style={{ "height": "200px" }} className=" w-100 card-img-top" alt="..." />
+                </div>
 
-            <div className='text-center mx-auto' style={{ "width": "18rem" }}>
-                <img src={singleProduct?.img} style={{ "height": "200px" }} className=" w-100 card-img-top" alt="..." />
+                <div className="card-body w-25 mx-auto">
+                    <h5 className="card-title">{singleProduct?.name}</h5>
+                    <p className="m-none">Price : {singleProduct?.price} BDT</p>
+                    <p className="m-none">Quantity : {singleProduct?.quantity} </p>
+                    <p className="m-none">Supplier : {singleProduct?.supplier_name} </p>
+                    <p className="m-none"><small>{singleProduct?.description}</small></p>
+                </div>
             </div>
 
-            <div className="card-body w-25 mx-auto">
-                <h5 className="card-title">{singleProduct?.name}</h5>
-                <p className="m-none">Price : {singleProduct?.price} BDT</p>
-                <p className="m-none">Quantity : {singleProduct?.quantity} </p>
-                <p className="m-none">Supplier : {singleProduct?.supplier_name} </p>
-                <p className="m-none"><small>{singleProduct?.description}</small></p>
-            </div>
-
-            <div className="card-footer  text-center w-50 ">
-                <button className='btn btn-info ' onClick={handleProductQuantity}> Deliver</button>
+            <div className="card-footer  text-center w-50 mx-auto delevary mt-3">
+                <button className='btn btn-info bg-dark text-white' onClick={handleProductQuantity}> Deliver</button>
                 <form onSubmit={handleAddQuantity} className='mt-4'>
                     <input className='' style={{ height: "40px" }} type='number' name="number" placeholder='re-stock'></input>
-                    <input className='btn btn-success' type="submit" value="Add Quantity"></input>
+                    <input className='btn btn-success bg-dark mt-2' type="submit" value="Add Quantity"></input>
                 </form>
             </div>
 

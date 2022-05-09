@@ -1,0 +1,9 @@
+.inventory{
+    background-color: rgb(241, 232, 214);
+    border: 1px solid black;
+}
+.delevary{
+    background-color: rgb(219, 209, 209);
+    border-radius: 20px;
+    padding: 10px;
+}
